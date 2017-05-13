@@ -16,6 +16,12 @@ This example is using mstdn which is CLI that is including in go-mastodon.
 $ mstdn stream --simplejson | mstdn-polly
 ```
 
+# Install
+
+```
+$ go get github.com/bamchoh/mstdn-polly
+```
+
 # Licence
 
 MIT
