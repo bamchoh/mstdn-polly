@@ -3,6 +3,7 @@ package main
 import (
 	"bufio"
 	"encoding/json"
+	"fmt"
 	"log"
 	"os"
 	"path/filepath"
@@ -37,6 +38,7 @@ func main() {
 	scanner := bufio.NewScanner(os.Stdin)
 	for scanner.Scan() {
 		txt := scanner.Text()
+		fmt.Println(txt)
 		dec := json.NewDecoder(strings.NewReader(txt))
 		msg := new(message)
 		err := dec.Decode(msg)
